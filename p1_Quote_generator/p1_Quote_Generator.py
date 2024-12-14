@@ -44,8 +44,10 @@ def get_random_quote():
     if quotes[quote_number] == quotes[-3]:
         thread = Thread(target=preload_quotes)  # Load quotes in a separate thread
         thread.start()
-
-# UI components
+        
+# ----------------------------------
+# UI COMPONENTS
+# ----------------------------------
 quote_label = tk.Label(
     window, text="Generate new quote", height=6, pady=10, wraplength=800, font=("Helvetica", 14)
 )
@@ -60,6 +62,10 @@ button = tk.Button(
     font=("Helvetica", 14),
 )
 button.grid(row=1, column=0, stick="WE", padx=20, pady=10)
+
+# ----------------------------------
+# MAINLOOP: Start the application
+# ----------------------------------
 
 # Run the application
 if __name__ == "__main__":
