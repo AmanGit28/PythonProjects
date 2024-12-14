@@ -9,6 +9,10 @@ window.geometry("1080x720")  # Set the window size
 window.title("Dice Game")  # Set the window title
 window.configure(bg="#EAF6FF")  # Set the background color
 
+# -------------------------------------------------------------
+# UI
+#--------------------------------------------------------------
+
 # List of dice images
 dice = [
     "D:/Project per DAY/a3 Dice Simulator/dice1.png",
@@ -51,5 +55,8 @@ button_width = 160  # Approximate width of the button in pixels
 button_x = (1080 - button_width) // 2  # Center horizontally in a 1080px wide window
 button.place(x=button_x, y=10)  # Place the button near the bottom
 
+# -------------------------------------------------------------
+# Main Function
+#--------------------------------------------------------------
 # Run the Tkinter event loop
 window.mainloop()
