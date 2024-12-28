@@ -139,7 +139,6 @@ def is_path_clear_for_rook_or_queen(old_pos, new_pos):
         for col in range(old_col + step, new_col, step):
             if (col, old_row) in positions_of_pieces():
                 return False  # Blocked by another piece
-
     return True
 
 # Function to check if the path is clear for diagonal moves (bishop and queen)
@@ -156,7 +155,6 @@ def is_path_clear_for_diagonal(old_pos, new_pos):
             return False  # Blocked by another piece
         col += direction_col
         row += direction_row
-
     return True
 
 # Function to check if sqaure is under attack or not
@@ -285,7 +283,6 @@ def is_valid_move(piece, old_pos, new_pos):
             if new_col == 2 and new_row == 0 and not castling_flags["black_rook_queen_side"]:
                 if is_path_clear((4, 0), (2, 0)) and not is_square_under_attack((3, 0), "white") and not is_square_under_attack((4, 0), "white"):
                     return True
-    
     return False
 
 
