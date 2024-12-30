@@ -451,7 +451,7 @@ def display_winner(message):
 
 
 
-# -------------------------- Main loop -------------------------- #
+# -------------------------- Main loop ------------------------------- #
 running = True
 while running:
     for event in pygame.event.get():
