@@ -1,0 +1,4 @@
+Put all the pieces as png format.
+pieces must be containing first letter of the color (white -> 'w' / black -> 'b') then underscore and the name of the piece.
+
+for example, black' bishop -> b_bishop.png
